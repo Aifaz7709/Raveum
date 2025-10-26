@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="stylesheet" href="/css/your-template.css" />
+ <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,500i,600,600i,700,700i|Cormorant+SC:400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -24,9 +28,35 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+      <style>
+  body.dark-mode {
+    background-color: #121212;
+    color: #e9ecef;
+  }
+  
+  .dark-mode .navbar {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+  }
+  
+  .dark-mode .nav-link {
+    color: #e9ecef !important;
+  }
+  
+  .dark-mode .card {
+    background-color: #1e1e1e;
+    border-color: #495057;
+  }
+  
+  /* Add your Sparkle Button styles here */
+  .dark-mode .sparkle-btn {
+    background: #2d1b69 !important;
+  }
+</style>
+    <title>wealthfront Demo</title>
   </head>
-  <body>
+  <body >
+
+    <!-- class="dark-mode" -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +69,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      <script src="/js/your-template.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,14 @@
+
+
+.info-subheading {
+  color: black !important;
+}
+
+.info-bullets {
+  color: rgb(72, 64, 187) !important;
+}
+.info-heading {
+  color: rgb(72, 64, 187) !important;
+      font-size: 3rem;
+    font-weight: 600;
+}

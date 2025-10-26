@@ -11,3 +11,131 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.modern-search {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50px;
+  padding: 4px;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modern-search:hover {
+  box-shadow: 
+    0 8px 30px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+.modern-search:focus-within {
+  box-shadow: 
+    0 12px 40px rgba(59, 130, 246, 0.15),
+    0 0 0 2px rgba(59, 130, 246, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.modern-search-input {
+  border: none !important;
+  background: transparent !important;
+  border-radius: 50px !important;
+  padding: 12px 20px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #1f2937 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.modern-search-input::placeholder {
+  color: #9ca3af !important;
+  font-weight: 400;
+}
+
+.modern-search-input:focus {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.modern-search-btn {
+  background: linear-gradient(135deg, #667eea 0%, #0a319f 100%) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  width: 44px !important;
+  height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  margin-left: 4px !important;
+}
+
+.modern-search-btn:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 
+    0 6px 20px rgba(102, 126, 234, 0.4),
+    0 0 0 2px rgba(102, 126, 234, 0.1) !important;
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%) !important;
+}
+
+.modern-search-btn:active {
+  transform: scale(0.95) !important;
+}
+
+/* Glass morphism effect for dark mode support */
+@media (prefers-color-scheme: dark) {
+  .modern-search {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .modern-search-input {
+    color: #f3f4f6 !important;
+  }
+  
+  .modern-search-input::placeholder {
+    color: #6b7280 !important;
+  }
+}
+.modern-search-container {
+  position: relative;
+}
+
+.modern-search-label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 14px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(transparent 50%, white 50%);
+  padding: 0 4px;
+}
+
+.modern-search-input:focus + .modern-search-label,
+.modern-search-input:not(:placeholder-shown) + .modern-search-label {
+  top: 0;
+  transform: translateY(-50%) scale(0.85);
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* For dark mode */
+@media (prefers-color-scheme: dark) {
+  .modern-search-input:focus + .modern-search-label,
+  .modern-search-input:not(:placeholder-shown) + .modern-search-label {
+    background: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.05) 50%);
+  }
+}

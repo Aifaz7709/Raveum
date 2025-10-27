@@ -18,6 +18,8 @@ import TrendingProperties from "./components/TrendingProperties";
 import InfoCard from "./components/InfoCard";
 import InfoCard1 from "./components/InfoCard1";
 import InfoCard2 from "./components/InfoCard2";
+import NewPropertyCard from "./components/newFetchCarousel";
+import PopularCourses from "./components/PopularCourses";
 
 function App() {
   const [theme, setTheme] = useState("light"); // default
@@ -57,7 +59,8 @@ function App() {
                   <InfoCard />
                   <InfoCard1 />
                   <InfoCard2 />
-    
+    <NewPropertyCard/>
+     <PopularCourses />
         <Hero />
         <ValueProps />
          <TrendingProperties  />

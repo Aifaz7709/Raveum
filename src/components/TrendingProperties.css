@@ -87,7 +87,7 @@
 }
 
 /* Property Card - Reduced Size */
-.property-card {
+.property-card2 {
   background: rgba(30, 41, 59, 0.7);
   backdrop-filter: blur(20px);
   border-radius: 20px;
@@ -101,7 +101,7 @@
   margin: 0 auto;
 }
 
-.property-card.active {
+.property-card2.active {
   opacity: 1;
   transform: scale(1);
   border-color: rgba(59, 130, 246, 0.3);
@@ -110,7 +110,7 @@
     0 0 0 1px rgba(59, 130, 246, 0.1);
 }
 
-.property-card.featured {
+.property-card2.featured {
   border-color: rgba(234, 179, 8, 0.3);
 }
 
@@ -145,7 +145,7 @@
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.property-card.active .property-image img {
+.property-card2.active .property-image img {
   transform: scale(1.05);
 }
 
@@ -168,7 +168,7 @@
   padding: 1.5rem;
 }
 
-.property-card:hover .property-overlay {
+.property-card2:hover .property-overlay {
   opacity: 1;
 }
 
@@ -519,7 +519,7 @@
     display: none;
   }
   
-  .property-card {
+  .property-card2 {
     max-width: 320px;
   }
   

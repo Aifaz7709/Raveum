@@ -180,7 +180,7 @@ const TrendingProperties = () => {
           <div className="swiper-wrapper">
             {properties.map((property, index) => (
               <div className="swiper-slide" key={property.id}>
-                <div className={`property-card ${index === activeSlide ? 'active' : ''} ${property.featured ? 'featured' : ''}`}>
+                <div className={`property-card2 ${index === activeSlide ? 'active' : ''} ${property.featured ? 'featured' : ''}`}>
                   {property.featured && (
                     <div className="featured-badge">
                       <i className="fas fa-star"></i>
